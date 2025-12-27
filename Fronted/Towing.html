@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fixora Auto Care — Vehicle Towing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="Favicon" href="image/Favicon.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px;
+      background: #f9fafb;   /* light background */
+      color: #111111;        /* dark text */
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    .hero img {
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.15);
+    }
+    .form-card {
+      margin-top: 30px;
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container">
+      <!-- Logo is now static (not a link) -->
+      <div class="brand">
+        <img src="image/logo.png" alt="Logo" class="logo">
+        <strong>Fixora Auto Care</strong>
+      </div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="reports.html">Reports</a>
+        <a href="Towing.html">Towing</a>
+        <a href="login.html"class="active">Login</a>
+        <a href="Signup.html">Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div>
+      <h1>24/7 Vehicle Towing Service</h1>
+      <p>We provide reliable towing for all vehicles — including older models — whenever you need help.</p>
+      <!-- Button scrolls to form -->
+      <a href="#request" class="btn success">Request Towing</a>
+    </div>
+    <img src="image/towing.jpg" alt="Towing Service">
+  </section>
+
+  <!-- Request Form -->
+  <main class="container">
+    <div id="request" class="card form-card">
+      <h2>Request Towing Assistance</h2>
+      <form>
+        <input class="input" type="text" placeholder="Your Name" required>
+        <input class="input" type="tel" placeholder="Phone Number" required pattern="[0-9]{10}">
+        <input class="input" type="text" placeholder="Vehicle Plate Number" required>
+        <input class="input" type="text" placeholder="Current Location" required>
+        <button type="submit" class="btn primary">Submit Request</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">© 2025 fixora auto care Vehicle Services</footer>
+</body>
+</html>
