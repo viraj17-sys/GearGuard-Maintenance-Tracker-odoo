@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fixora Auto Care — Reports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="Favicon" href="image/Favicon.png">
+  <style>
+    @media print{
+      .nav, .footer, .btn{display:none}
+      body{background:#fff; color:#000}
+      .card{box-shadow:none; border:1px solid #ddd; background:#fff}
+      .table td{background:#fff; border:1px solid #ddd}
+    }
+  </style>
+  <link rel="icon" type="Favicon" href="image/Favicon.png">
+</head>
+<body>
+ <header class="nav">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="brand" href="index.html" style="display:flex; align-items:center; gap:8px;">
+        <img src="image/logo.png" alt="Fixora Auto Care Logo" class="logo">
+        <strong>Fixora Auto Care</strong>
+      </a>
+
+      <nav style="margin-left:auto; display:flex; gap:6px;">
+        <a href="index.html">Dashboard</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="reports.html"class="active">Reports</a>
+        <a href="Towing.html">Towing</a>
+        <a href="login.html">Login</a>
+        <a href="Signup.html">Signup</a>    
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h3>Monthly summary</h3>
+      <p>Period: Dec 2025</p>
+      <table class="table">
+        <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Completed tasks</td><td>12</td></tr>
+          <tr><td>Scheduled tasks</td><td>4</td></tr>
+          <tr><td>Overdue tasks</td><td>1</td></tr>
+          <tr><td>Total estimated cost</td><td>₹28,500</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:12px;">
+        <a class="btn primary" href="#" onclick="return false">Print via browser (Ctrl+P)</a>
+      </div>
+    </div>
+    <footer class="footer">Print-friendly layout using @media print.</footer>
+  </main>
+</body>
+</html>
